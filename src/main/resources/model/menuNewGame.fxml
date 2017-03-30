@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.MenuNewGameController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="957.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MenuBackground.png" />
+         </image></ImageView>
+      <ImageView fx:id="logo" layoutX="323.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@YatzyLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="868.0" layoutY="557.0" prefWidth="53.0" text="v 1.0.0" textFill="#3e7831">
+         <font>
+            <Font name="Antonio Regular" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="playerOneName" focusColor="#3e7831" layoutX="337.0" layoutY="337.0" promptText="Player One" unFocusColor="#363636">
+         <font>
+            <Font name="Antonio Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="playerTwoName" focusColor="#3e7831" focusTraversable="false" layoutX="337.0" layoutY="406.0" promptText="Player Two" unFocusColor="#363636">
+         <font>
+            <Font name="Antonio Regular" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="536.0" layoutY="304.0" text="Type" textFill="#3e7831">
+         <font>
+            <Font name="Antonio Regular" size="18.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="botPlayer" layoutX="503.0" layoutY="402.0" text="Bot" textFill="#363636" toggleColor="#35682a" toggleLineColor="#5aad47" unToggleLineColor="#7c7b7b">
+         <font>
+            <Font name="Antonio Regular" size="18.0" />
+         </font>
+      </JFXToggleButton>
+      <Label layoutX="351.0" layoutY="302.0" text="Name" textFill="#3e7831">
+         <font>
+            <Font name="Antonio Regular" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="playButton" fitHeight="35.0" fitWidth="122.0" layoutX="491.0" layoutY="486.0" onMouseClicked="#playAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Play.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="mainMenuButton" fitHeight="35.0" fitWidth="122.0" layoutX="338.0" layoutY="486.0" onMouseClicked="#mainMenuAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MainMenuClick.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label disable="true" layoutX="530.0" layoutY="346.0" text="Player" textFill="#8a8a8a">
+         <font>
+            <Font name="Antonio Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fillName" layoutX="704.0" layoutY="490.0" opacity="0.0" text="Fill The Name Field" textFill="#3e7831">
+         <font>
+            <Font name="Antonio Regular" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

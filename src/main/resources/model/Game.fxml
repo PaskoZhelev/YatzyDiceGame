@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.GameController">
+   <children>
+      <ImageView fx:id="backgroundSky" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BackgroundSky.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backgroundHeaven" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BackgroundHeaven.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="menuBackground" opacity="1.0" fitHeight="650.0" fitWidth="957.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MenuBackground.png" />
+         </image></ImageView>
+      <ImageView fx:id="logo" fitHeight="73.0" fitWidth="135.0" layoutX="486.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@YatzyLogo.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="finishRectangleOne" arcHeight="5.0" arcWidth="7.0" fill="#3e753087" height="61.0" layoutX="548.0" layoutY="259.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="139.0" />
+      <Rectangle fx:id="finishRectangleTwo" arcHeight="5.0" arcWidth="7.0" fill="#905d5d87" height="61.0" layoutX="786.0" layoutY="259.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="139.0" />
+      <Label fx:id="finishPointsOne" alignment="CENTER" layoutX="608.0" layoutY="262.0" opacity="0.0" text="0">
+         <font>
+            <Font name="Antonio Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="finishPointsTwo" alignment="CENTER" layoutX="848.0" layoutY="262.0" opacity="0.0" text="0">
+         <font>
+            <Font name="Antonio Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="finishOneName" alignment="CENTER" layoutX="551.0" layoutY="172.0" opacity="0.0" text="Nicolo">
+         <font>
+            <Font name="Antonio Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="finishTwoName" alignment="CENTER" layoutX="784.0" layoutY="176.0" opacity="0.0" text="Pasko">
+         <font>
+            <Font name="Antonio Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="finishWinner" alignment="CENTER" layoutX="662.0" layoutY="367.0" opacity="0.0" prefHeight="53.0" prefWidth="146.0" text="Pasko">
+         <font>
+            <Font name="Antonio Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="finishText" alignment="CENTER" layoutX="694.0" layoutY="422.0" opacity="0.0" text="Wins!">
+         <font>
+            <Font name="Antonio Bold" size="39.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <ImageView fx:id="finishRollingImage" fitHeight="73.0" fitWidth="135.0" layoutX="695.0" layoutY="490.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@diceanimation.gif" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="rollButton" fitHeight="51.0" fitWidth="133.0" layoutX="647.0" layoutY="506.0" onMouseClicked="#Roll" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Roll.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="clickedDiceZero" layoutX="523.0" layoutY="226.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="clickedDiceOne" layoutX="671.0" layoutY="226.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="clickedDiceTwo" layoutX="819.0" layoutY="226.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="clickedDiceThree" layoutX="604.0" layoutY="345.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="clickedDiceFour" layoutX="746.0" layoutY="345.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="5.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Paper.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="diceThree" layoutX="604.0" layoutY="345.0" onMouseClicked="#clickDice3" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceFour" layoutX="746.0" layoutY="345.0" onMouseClicked="#clickDice4" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceTwo" layoutX="819.0" layoutY="226.0" onMouseClicked="#clickDice2" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceOne" layoutX="671.0" layoutY="226.0" onMouseClicked="#clickDice1" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceZero" layoutX="523.0" layoutY="226.0" onMouseClicked="#clickDice0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="mainMenuButton" fitHeight="24.0" fitWidth="125.0" layoutX="641.0" layoutY="33.0" onMouseClicked="#mainMenuAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MainMenuClick.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Rectangle fx:id="rectangleNameOne" arcHeight="5.0" arcWidth="7.0" fill="#3e753087" height="24.0" layoutX="137.0" layoutY="71.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="139.0" />
+      <Rectangle fx:id="rectangleNameTwo" arcHeight="5.0" arcWidth="7.0" fill="#905d5d87" height="24.0" layoutX="285.0" layoutY="71.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="172.0" />
+      <Label fx:id="displayPlayerOneName" layoutX="181.0" layoutY="69.0">
+         <font>
+            <Font name="Antonio Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="displayPlayerTwoName" layoutX="335.0" layoutY="69.0">
+         <font>
+            <Font name="Antonio Bold" size="19.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rollsRectangle" arcHeight="5.0" arcWidth="5.0" height="21.0" layoutX="744.0" layoutY="517.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Label fx:id="remainingRolls" layoutX="750.0" layoutY="515.0" textFill="#eeecec">
+         <font>
+            <Font name="Antonio Bold" size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="139.0" layoutY="102.0" prefHeight="456.0" prefWidth="22.0">
+         <children>
+            <VBox layoutX="-1.0" prefHeight="456.0" prefWidth="22.0">
+               <children>
+                  <Rectangle fx:id="rectangle1Ones" fill="#40733286" height="19.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Twos" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Threes" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Fours" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Fives" fill="#40733286" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Sixes" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Sum" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Bonus" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Pair" fill="#40733286" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1TwoPairs" fill="#40733286" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1ThreeOfaKind" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1FourOfaKind" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1SmallStraight" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1LargeStraight" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1FullHouse" fill="#40733286" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Chance" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Yatzy" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle1Total" fill="#40733286" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+               </children>
+            </VBox>
+            <Label id="rect" fx:id="display1Twos" alignment="CENTER" layoutX="4.0" layoutY="21.0" onMouseClicked="#click1Twos" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Threes" alignment="CENTER" layoutX="4.0" layoutY="47.0" onMouseClicked="#click1Threes" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Fours" alignment="CENTER" layoutX="4.0" layoutY="72.0" onMouseClicked="#click1Fours" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Fives" alignment="CENTER" layoutX="4.0" layoutY="98.0" onMouseClicked="#click1Fives" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Sixes" alignment="CENTER" layoutX="4.0" layoutY="124.0" onMouseClicked="#click1Sixes" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="display1Sum" alignment="CENTER" layoutX="4.0" layoutY="150.0" text="0" textFill="#c9584b">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label fx:id="display1Bonus" alignment="CENTER" layoutX="4.0" layoutY="175.0" text="0" textFill="#c9584b">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Pair" alignment="CENTER" layoutX="4.0" layoutY="201.0" onMouseClicked="#click1Pair" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1TwoPairs" alignment="CENTER" layoutX="4.0" layoutY="226.0" onMouseClicked="#click1TwoPairs" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1ThreeOfaKind" alignment="CENTER" layoutX="4.0" layoutY="252.0" onMouseClicked="#click1ThreeOfaKind" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1FourOfaKind" alignment="CENTER" layoutX="4.0" layoutY="278.0" onMouseClicked="#click1FourOfaKind" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1SmallStraight" alignment="CENTER" layoutX="4.0" layoutY="303.0" onMouseClicked="#click1SmallStraight" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1LargeStraight" alignment="CENTER" layoutX="4.0" layoutY="329.0" onMouseClicked="#click1LargeStraight" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1FullHouse" alignment="CENTER" layoutX="4.0" layoutY="355.0" onMouseClicked="#click1FullHouse" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Chance" alignment="CENTER" layoutX="4.0" layoutY="380.0" onMouseClicked="#click1Chance" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Yatzy" alignment="CENTER" layoutX="4.0" layoutY="406.0" onMouseClicked="#click1Yatzy" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="display1Total" alignment="CENTER" layoutX="4.0" layoutY="432.0" text="0" textFill="#c9584b">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display1Ones" alignment="CENTER" layoutX="4.0" layoutY="-5.0" onMouseClicked="#click1Ones" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+      <Pane layoutX="283.0" layoutY="102.0" prefHeight="456.0" prefWidth="22.0">
+         <children>
+            <VBox prefHeight="456.0" prefWidth="22.0">
+               <children>
+                  <Rectangle fx:id="rectangle2Ones" fill="#bfaaaa" height="19.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Twos" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Threes" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Fours" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Fives" fill="#bfaaaa" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Sixes" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Sum" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Bonus" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Pair" fill="#bfaaaa" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2TwoPairs" fill="#bfaaaa" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2ThreeOfaKind" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2FourOfaKind" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2SmallStraight" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2LargeStraight" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2FullHouse" fill="#bfaaaa" height="25.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Chance" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Yatzy" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                  <Rectangle fx:id="rectangle2Total" fill="#bfaaaa" height="26.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+               </children>
+            </VBox>
+            <Label id="rect" fx:id="display2Ones" layoutX="4.0" layoutY="-5.0" onMouseClicked="#click2Ones" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Twos" layoutX="4.0" layoutY="21.0" onMouseClicked="#click2Twos" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Threes" layoutX="4.0" layoutY="47.0" onMouseClicked="#click2Threes" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Fours" layoutX="4.0" layoutY="72.0" onMouseClicked="#click2Fours" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Fives" layoutX="4.0" layoutY="98.0" onMouseClicked="#click2Fives" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Sixes" layoutX="4.0" layoutY="124.0" onMouseClicked="#click2Sixes" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="display2Sum" layoutX="4.0" layoutY="150.0" text="0" textFill="#c9584b">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label fx:id="display2Bonus" layoutX="4.0" layoutY="175.0" text="0" textFill="#c9584b">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Pair" layoutX="4.0" layoutY="201.0" onMouseClicked="#click2Pair" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2TwoPairs" layoutX="4.0" layoutY="226.0" onMouseClicked="#click2TwoPairs" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2ThreeOfaKind" layoutX="4.0" layoutY="252.0" onMouseClicked="#click2ThreeOfaKind" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2FourOfaKind" layoutX="4.0" layoutY="278.0" onMouseClicked="#click2FourOfaKind" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2SmallStraight" layoutX="4.0" layoutY="303.0" onMouseClicked="#click2SmallStraight" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2LargeStraight" layoutX="4.0" layoutY="329.0" onMouseClicked="#click2LargeStraight" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2FullHouse" layoutX="4.0" layoutY="355.0" onMouseClicked="#click2FullHouse" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Chance" layoutX="4.0" layoutY="380.0" onMouseClicked="#click2Chance" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label id="rect" fx:id="display2Yatzy" layoutX="4.0" layoutY="406.0" onMouseClicked="#click2Yatzy" opacity="0.6" text="0">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="display2Total" layoutX="4.0" layoutY="432.0" text="0" textFill="#c9584b">
+               <font>
+                  <Font name="Antonio Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="turnDicePlayerOne" fitHeight="27.0" fitWidth="29.0" layoutX="150.0" layoutY="69.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@diceanimation.gif" />
+         </image></ImageView>
+      <ImageView fx:id="turnDicePlayerTwo" fitHeight="27.0" fitWidth="29.0" layoutX="305.0" layoutY="69.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@diceanimation.gif" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="25.0" layoutX="638.0" layoutY="69.0" opacity="0.08" stroke="#ffffff00" strokeType="INSIDE" width="83.0" />
+      <JFXButton layoutX="637.0" layoutY="68.0" onAction="#changeTheme" text="Change Theme" textFill="#3e7530">
+         <font>
+            <Font name="Antonio Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

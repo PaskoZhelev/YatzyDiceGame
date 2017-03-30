@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1365.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@solid-green-background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="768.0" fitWidth="1366.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@green-background-for-website-and-photoshop.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="rollButton" alignment="CENTER" layoutX="351.0" layoutY="319.0" onAction="#rollDices" opacity="0.55" style="-fx-background-color: blue;" text="Roll" textFill="WHITE" AnchorPane.rightAnchor="192.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="dice0" layoutX="265.0" layoutY="230.0" onMouseClicked="#clickDice0" opacity="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="dice1" layoutX="314.0" layoutY="230.0" onMouseClicked="#clickDice1" opacity="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="dice2" layoutX="372.0" layoutY="230.0" onMouseClicked="#clickDice2" opacity="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="dice4" layoutX="487.0" layoutY="230.0" onMouseClicked="#clickDice4" opacity="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="dice3" layoutX="429.0" layoutY="230.0" onMouseClicked="#clickDice3" opacity="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Separator layoutX="167.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="6.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="167.0" AnchorPane.topAnchor="-2.0" />
+      <Separator layoutX="-1.0" layoutY="159.0" prefHeight="3.0" prefWidth="169.0" />
+      <Separator layoutX="-1.0" layoutY="204.0" prefHeight="3.0" prefWidth="169.0" />
+      <Separator layoutX="-1.0" layoutY="393.0" prefHeight="3.0" prefWidth="169.0" />
+      <VBox layoutX="44.0" layoutY="93.0" prefHeight="415.0" prefWidth="112.0" style="-fx-padding: 5;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Ones">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Twos">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Threes">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Fours">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Fives">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Sixes">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Sum">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Bonus">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="One Pair">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Two Pairs">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="3 of a Kind">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="4 of a Kind">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Small Straight">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Large Straight">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Full House">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Chance">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Yatzy">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Total">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="130.0" layoutY="2.0" prefHeight="410.0" prefWidth="39.0" style="-fx-padding: 5;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="431.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <Label fx:id="displayOnes" onMouseClicked="#clickOnes" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayTwos" onMouseClicked="#clickTwos" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayThrees" onMouseClicked="#clickThrees" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayFours" onMouseClicked="#clickFours" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayFives" onMouseClicked="#clickFives" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displaySixes" onMouseClicked="#clickSixes" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displaySum" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="displayBonus" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="displayPair" onMouseClicked="#clickPair" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayTwoPairs" onMouseClicked="#clickTwoPairs" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayThreeOfaKind" onMouseClicked="#clickThreeOfaKind" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayFourOfaKind" onMouseClicked="#clickFourOfaKind" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displaySmallStraight" onMouseClicked="#clickSmallStraight" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayLargeStraight" onMouseClicked="#clickLargeStraight" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayFullHouse" onMouseClicked="#clickFullHouse" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayChance" onMouseClicked="#clickChance" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayYatzy" onMouseClicked="#clickYatzy" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="displayTotal" opacity="0.61" text="0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="clickedDiceZero" fitHeight="70.0" fitWidth="70.0" layoutX="217.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="clickedDiceOne" fitHeight="70.0" fitWidth="70.0" layoutX="345.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="clickedDiceTwo" fitHeight="70.0" fitWidth="70.0" layoutX="473.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="clickedDiceThree" fitHeight="70.0" fitWidth="70.0" layoutX="280.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="clickedDiceFour" fitHeight="70.0" fitWidth="70.0" layoutX="409.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="diceZero" fitHeight="50.0" fitWidth="50.0" layoutX="228.0" layoutY="110.0" onMouseClicked="#clickDice0" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceOne" fitHeight="50.0" fitWidth="50.0" layoutX="356.0" layoutY="110.0" onMouseClicked="#clickDice1" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceTwo" fitHeight="50.0" fitWidth="50.0" layoutX="484.0" layoutY="110.0" onMouseClicked="#clickDice2" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceThree" fitHeight="50.0" fitWidth="50.0" layoutX="291.0" layoutY="219.0" onMouseClicked="#clickDice3" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fx:id="diceFour" fitHeight="50.0" fitWidth="50.0" layoutX="420.0" layoutY="219.0" onMouseClicked="#clickDice4" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+   </children>
+</AnchorPane>
