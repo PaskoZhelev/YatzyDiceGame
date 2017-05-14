@@ -6,7 +6,7 @@ It does not include OOP principles and may definitely be written in a more effic
 
 The focus was on the _JavaFX_ platform and on the _Graphic Design_
 
-Download and play:  https://drive.google.com/open?id=0B0Vs5TcU60E_NmF3V1FZV0I4SWs
+Download and play:  https://goo.gl/cRjwId
 
 Screenshots of the game:
 
